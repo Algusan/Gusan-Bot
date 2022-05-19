@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     /*eslint-disable @typescript-eslint/no-explicit-any*/
     const users = await this.client.DB.user.count();
-    const uban = await this.client.DB.user.countDocuments.({ban: true});
+    const uban = await this.client.DB.user.countDocuments({ban: true});
     const chats: any = this.client.chats
       .all()
       .filter((v) => !v.read_only && !v.archive)
