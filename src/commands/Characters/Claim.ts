@@ -56,7 +56,7 @@ export default class Command extends BaseCommand {
       { $set: { "charaResponse.claimable": false } }
     );
     return void M.reply(
-      `🎊 You have claimed *${data.name}* from *${data.source}*.`
+      `🎉You have claimed *${data.name}* from *${data.source}*.`
     );
   };
 }
