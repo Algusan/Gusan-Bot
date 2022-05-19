@@ -235,7 +235,7 @@ export default class MessageHandler {
         }
       );
       await this.client.sendMessage(Data.jids[p], buffer, MessageType.image, {
-        caption: `A wild pokemon appeared! Use ${this.client.config.prefix}catch to catch this pokemon.`,
+        caption: `A Wild Pokemon Appeared! [Use ${this.client.config.prefix}catch <pokemon_name> to catch it!]`,
       });
       setTimeout(async () => {
         await this.client.DB.group.updateOne(
@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "🎇 Beyond 🎇",
+        footerText: "Gusan Bot©",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `🎇BACK TO BUSINESS!!🎇 (t-ehe)`;
+    const text = `🎇BACK TO BUSINESS!!🎇`;
     await this.client.sendMessage(
       "120363041185314873@g.us",
       text,
@@ -313,7 +313,7 @@ export default class MessageHandler {
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `I'm back, Darling !! 💖w💖`;
+    const text = `I'm back, Darling!`;
     await this.client.sendMessage(
       "120363041185314873@g.us",
       text,
