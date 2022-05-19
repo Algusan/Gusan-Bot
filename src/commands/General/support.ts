@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
     await this.client.sendMessage(
       M.sender.jid,
       `*I'M FROM GUSAN*\n\n
-        GUSAN SUPPORT:\n\nhttps://chat.whatsapp.com/KATAXc1RJca64skJkQMPqa\n\nGUSAN CASINO💰:\n\nhttps://chat.whatsapp.com/FkYFVuXZ8v7495n6033lgs\n\n GUSAN QUIZ📑:\n\nhttps://chat.whatsapp.com/G3nA5buCFfLLnU89lBvRLY,
+        GUSAN SUPPORT:\n\nhttps://chat.whatsapp.com/KATAXc1RJca64skJkQMPqa\n\nGUSAN CASINO💰:\n\nhttps://chat.whatsapp.com/FkYFVuXZ8v7495n6033lgs\n\n GUSAN QUIZ📑:\n\nhttps://chat.whatsapp.com/G3nA5buCFfLLnU89lBvRLY`,
 
       MessageType.text
     );
