@@ -304,18 +304,18 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `🎇BACK TO BUSINESS!!🎇`;
+    const text = `${M.sender.username} Reconnected🚀`;
     await this.client.sendMessage(
-      "120363041185314873@g.us",
+      "120363040300072277@g.us",
       text,
       MessageType.text
     );
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `I'm back, Darling!`;
+    const text = `${M.sender.username} Reconnected🚀`;
     await this.client.sendMessage(
-      "120363041185314873@g.us",
+      "120363040300072277@g.us"",
       text,
       MessageType.text
     );
