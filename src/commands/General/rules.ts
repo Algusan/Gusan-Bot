@@ -20,15 +20,15 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     const buttons = [
       {
-        buttonId: "rules",
-        buttonText: { displayText: `${this.client.config.prefix}rules` },
+        buttonId: "faq",
+        buttonText: { displayText: `${this.client.config.prefix}faq` },
         type: 1,
       },
     ];
 
     const buttonMessage: any = {
-      contentText: `\n\n_*HELLO THERE BEYOND BOT HERE*_\n\n 1.spamming cmds in casino=2days ban\n\n 2.don't dm mods for asking to be a mod.\n\n 3.don't ask us to sell our bots.\n\n 4.the more good you are gonna be as a beyond user the more rewards you'll get\n\n`,
-      footerText: "🎇 Beyond 🎇",
+      contentText: `🎃𝗕𝗼𝘁 𝗥𝘂𝗹𝗲𝘀\n\n 1.Don't call or spam the bot.'\n\n 2.Don't text the mods asking to be added as a mod.'\n\n 3.Don't chat the bot as the bot doesn't chat back.'\n\n 4.Use ${this.client.config.prefix}support command to get support link.\n\n 5.Send group link to the bot's DM or to bot owner.'\n\n 6.The bot must be an admin of your group.\n\n 7.The bot will join a group with 30+ members.\n\n 8.The bot won't join back in a group where it was removed.'\n\n 9.The bot will leave inactive groups.\n\n 10.Don't abuse the bot or the owner in any way.'`,
+      footerText: "Gusan Bot©",
       buttons: buttons,
       headerType: 1,
     };

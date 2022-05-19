@@ -1,34 +1,36 @@
-import { MessageType, Mimetype } from "@adiwajshing/baileys";
-import MessageHandler from "../../Handlers/MessageHandler";
-import BaseCommand from "../../lib/BaseCommand";
-import WAClient from "../../lib/WAClient";
-import { ISimplifiedMessage } from "../../typings";
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
+import MessageHandler from '../../Handlers/MessageHandler'
+import BaseCommand from '../../lib/BaseCommand'
+import WAClient from '../../lib/WAClient'
+import { ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
-  constructor(client: WAClient, handler: MessageHandler) {
-    super(client, handler, {
-      command: "support",
-      aliases: ["support"],
-      description: "Gets the support group links",
-      category: "general",
-      usage: `${client.config.prefix}Support`,
-      baseXp: 10,
-    });
-  }
+    constructor(client: WAClient, handler: MessageHandler) {
+        super(client, handler, {
+            command: 'support',
+            aliases: ['support'],
+            description: 'Gets the support group links',
+            category: 'general',
+            usage: `${client.config.prefix}Support`,
+            baseXp: 10
+        })
+    }
 
-  run = async (M: ISimplifiedMessage): Promise<void> => {
-    await this.client.sendMessage(
-      M.sender.jid,
-      ` _*I'M FROM BEYOND 🎆*\n\n
-        _*BEYOND NEWS*_:https://chat.whatsapp.com/KcjW4C4Zl46L1ECpot1FeO\n\n 
-        _*WELCOME TO BEYOND*_:https://chat.whatsapp.com/HGH0SFq4w0B6IgSWJkgtt5\n\n
-        _*BEYOND CASINO*_:https://chat.whatsapp.com/EmfhxmgQhNfIUxiE8NHCvq\n\n 
-        _*BEYOND NSFW*_:https://chat.whatsapp.com/GSK6jAz783L107yJrjeV71
-        _*BEYOND QUIZ*_:https://chat.whatsapp.com/F6gqHxiHImD1vi5oc3ExBf`,
+    run = async (M: ISimplifiedMessage): Promise<void> => {
+        (await this.client.sendMessage(
+        M.sender.jid,
+                `*📮Support Group Links*
+GUSAN SUPPORT:\n\nhttps://chat.whatsapp.com/KATAXc1RJca64skJkQMPqa\n\nGUSAN CASINO💰:\n\nhttps://chat.whatsapp.com/FkYFVuXZ8v7495n6033lgs\n\n GUSAN QUIZ📑:\n\nhttps://chat.whatsapp.com/G3nA5buCFfLLnU89lBvRLY,
+           MessageType.text
+        ))
+        const n = [
+            './assets/images/anime-gal.jpg',
+        ]
+        let rin = n[Math.floor(Math.random() * n.length)]
+        return void this.client.sendMessage(M.from, { url: rin }, MessageType.image, {quoted:M.WAMessage,
+            mimetype: Mimetype.jpeg,
+            caption: `Regarding this, I have sent you a personal message in your DM📪\n` }
+        )
 
-      MessageType.text
-    );
-
-    return void M.reply("Sent you the Group Link in personal message");
-  };
+        }
 }
