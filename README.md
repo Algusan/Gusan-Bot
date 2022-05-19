@@ -1,10 +1,10 @@
 <div align="center">
 
-<a href='https://www.linkpicture.com/view.php?img=LPic62169991d23e711584403'><img src='https://www.linkpicture.com/q/Asunabotto.jpg' type='image'></a>
+<a href='https://www.linkpicture.com/view.php?img=LPic62169991d23e711584403'><img src='https://1.bp.blogspot.com/-SiHl61RLi1g/YIONWrGDGaI/AAAAAAAAGWs/HXiCsQafHAMSdapWg4HbNYN7BrQ4RmKXwCLcBGAsYHQ/s16000/beautiful%2Banime%2Bgirl.jpg' type='image'></a>
 
 
 
-# **Asuna: A MAINTAINED VERSION OF KATSUSHIKA**
+# **Gusan: A BOT WITH RICH ANIME FEATURES**
 
 
 
@@ -16,7 +16,7 @@
 
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Issa2001/AsunaBotto)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Algusan/Gusan-Bot)
 
 
 
