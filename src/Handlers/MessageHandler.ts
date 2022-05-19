@@ -315,7 +315,7 @@ export default class MessageHandler {
   sendReconnectMessage = async (): Promise<void> => {
     const text = `${M.sender.username} Reconnected🚀`;
     await this.client.sendMessage(
-      "120363040300072277@g.us"",
+      "120363040300072277@g.us",
       text,
       MessageType.text
     );
