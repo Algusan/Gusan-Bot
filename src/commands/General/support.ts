@@ -29,7 +29,7 @@ GUSAN SUPPORT:\n\nhttps://chat.whatsapp.com/KATAXc1RJca64skJkQMPqa\n\nGUSAN CASI
         let rin = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: rin }, MessageType.image, {quoted:M.WAMessage,
             mimetype: Mimetype.jpeg,
-            caption: `Regarding this, I have sent you a personal message in your DM📪\n` }
+            caption: `Regarding this, I have sent you a personal message📪\n` }
         )
 
         }
