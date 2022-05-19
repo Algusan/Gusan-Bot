@@ -46,12 +46,12 @@ export default class Command extends BaseCommand {
         ? this.client.contacts[users.jid].short
         : `@${users.jid.split("@")[0]}`;
 
-      let text = `_*🎆BEYOND THE WORLD🎆*_\n *#${i}*\n*🎆USER* : ${username}\n*🎊XP*: ${users.Xp}\n*🏦BANK* : ${users.bank}\n*🪙gold* : ${users.wallet}\n`;
+      let text = `_*GUSAN BOT*_\n *#${i}*\n*🏮USER* : ${username}\n*🎊XP*: ${users.Xp}\n*🏦BANK* : ${users.bank}\n*🪙gold* : ${users.wallet}\n`;
       message.push(text);
     }
     console.log(message);
     M.reply(
-      await request.buffer("https://wallpapercave.com/uwp/uwp1997564.jpeg"),
+      await request.buffer("https://1.bp.blogspot.com/-SiHl61RLi1g/YIONWrGDGaI/AAAAAAAAGWs/HXiCsQafHAMSdapWg4HbNYN7BrQ4RmKXwCLcBGAsYHQ/s16000/beautiful%2Banime%2Bgirl.jpg"),
       MessageType.image,
       undefined,
       mention,
