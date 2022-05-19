@@ -91,8 +91,6 @@ const start = async () => {
 
   client.on("group-participants-update", eventHandler.handle);
 
-  client.on("group-participants-update", modsHandler.handleMods);
-
   await client.connect();
 };
 
