@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
       command: "boolean",
-      description: "Mega Jackpot for *İşşa* & his mods only.",
+      description: "Mega Jackpot for mods only.",
       modsOnly: true,
       aliases: ["300","boolean"],
       category: "dev",
@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
-    if (M.from !== "120363040442532842@g.us")
+    if (M.from !== "120363043276853316@g.us")
       return void M.reply(
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
