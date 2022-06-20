@@ -33,11 +33,9 @@ export type TCategory =
   | "general"
   | "media"
   | "moderation"
-  | "music"
-  | "youtube"
   | "pokemon"
   | "nsfw"
+  | "textpro"
   | "utils"
   | "weeb"
-  | "lumine"
   | "category";
