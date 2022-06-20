@@ -11,6 +11,7 @@ export default class Command extends BaseCommand {
       aliases: ["support"],
       description: "Gets the support group links",
       category: "general",
+      dm: true,
       usage: `${client.config.prefix}Support`,
       baseXp: 10,
     });
